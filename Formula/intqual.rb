@@ -5,8 +5,8 @@
 class Intqual < Formula
   desc "Dual-layer asynchronous network latency analyzer and observability tool writte"
   homepage "https://github.com/RaijuMounun/intqual"
-  url "https://github.com/RaijuMounun/intqual/archive/refs/tags/v1.0.1.tar.gz"
-  sha256 "d18dc1129cade2eaa9e898a6e1b607d11f10b63d8eaa82c8127614fc0575f6aa"
+  url "https://github.com/RaijuMounun/intqual/archive/refs/tags/v1.0.2.tar.gz"
+  sha256 "ac2c5b3193f4baf25733d614170e620d6e9d5dd92f7ff554bd076dd9659d6bbd"
   license "MIT"
 
   depends_on "rust" => :build
