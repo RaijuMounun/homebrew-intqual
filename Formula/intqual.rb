@@ -5,17 +5,15 @@
 class Intqual < Formula
   desc "Dual-layer asynchronous network latency analyzer and observability tool writte"
   homepage "https://github.com/RaijuMounun/intqual"
-  url "https://github.com/RaijuMounun/intqual/archive/refs/tags/v1.0.4.tar.gz"
-  sha256 "97d27faf0bb767263e44a62e34bbf3793effddc54f2189ff3331277966d54779"
+  url "https://github.com/RaijuMounun/intqual/archive/refs/tags/v1.0.6.tar.gz"
+  sha256 "b82b3e3013ad5885d83e8f6f844380397ed5d092855888050e5390a697d9c278"
   license "MIT"
 
-  depends_on "rust" => :build
-
   def install
-    system "cargo", "install", *std_cargo_args
+    bin.install "intqual"
   end
 
   test do
-    system "#{bin}/intqual --version"
+    system "#{bin}/intqual", "--version"
   end
 end
