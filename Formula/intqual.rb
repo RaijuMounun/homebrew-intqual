@@ -1,19 +1,19 @@
 class Intqual < Formula
   desc "A network diagnostic tool"
   homepage "https://github.com/RaijuMounun/intqual"
-  version "1.2.0"
+  version "1.3.0"
 
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/RaijuMounun/intqual/releases/download/v1.2.0/intqual-macos-aarch64"
-      sha256 "103212e760ea557a249a28178caa9b1aed3dc8a889b880e005dcdc137768f2c6"
+      url "https://github.com/RaijuMounun/intqual/releases/download/v1.3.0/intqual-macos-aarch64"
+      sha256 "95eeeb1468c5d762885c17b20810a43a41319a00fa0698e8cd074ecd442ff212"
     else
-      url "https://github.com/RaijuMounun/intqual/releases/download/v1.2.0/intqual-macos-amd64"
-      sha256 "be730b368236946d87c28c9feb04f54af03a619763803fb2a4d8d9cc9a305b3e"
+      url "https://github.com/RaijuMounun/intqual/releases/download/v1.3.0/intqual-macos-amd64"
+      sha256 "bc52b7423ab977d341953df851a680314f9905c60101b90f20ec4f2e79f893e5"
     end
   elsif OS.linux?
-    url "https://github.com/RaijuMounun/intqual/releases/download/v1.2.0/intqual-linux-amd64"
-    sha256 "b5115b828ea73a02ef67ded0d7e915d90c13f0636667c78947417595ffdd692b"
+    url "https://github.com/RaijuMounun/intqual/releases/download/v1.3.0/intqual-linux-amd64"
+    sha256 "64207b08aa9824c6153cdfc78824965cf711c6fe592424376545008f008dc748"
   end
 
   def install
